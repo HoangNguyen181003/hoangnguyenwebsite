@@ -1,0 +1,140 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+/* --header-- */
+
+header{
+    background-color: white;
+    border:1px solid #2b3f8d;
+    border-top: 10px solid #2b3f8d;   
+    padding: 20px 0 10px 0;
+    display:flex;
+}
+header .logo_link{
+    /* border:1px solid red; */
+    margin-left: 100px;
+}
+.logo_link img{
+    height:60px;
+    width:350px;
+}
+header .col-right {
+    display:block;
+    width: 425px;
+    position: relative;
+    /* border:1px solid red; */
+}
+header .col-right .form{
+    width:100%;
+    /* border:1px solid red; */
+    float:right;
+
+}
+header .col-right .form .input{
+    float:right;
+    background: #f2f7f9;
+}
+header .col-right .login {
+    font-size: 13px;
+    float:right;
+    padding-bottom:5px;
+    margin-bottom:10px;
+    border-bottom:1px solid #231c1c;
+}
+header .col-right .login a{
+    text-decoration:none;
+}
+header .col-right .login img{
+    width:15px;
+}
+header .col-right .form .btn{
+    background: url(../asset/heading/bgr-submit.png);
+    border:0.5px;
+    padding:1px 10px;
+    height:24px;
+    border-radius: 2px;
+}
+header .col-right .form .text-box::placeholder{
+    font-size: 13px;
+}
+header .col-right .form .text-box{
+    border:0px;
+    background: transparent;
+}
+header .col-right .form i{
+    padding:5px 10px;
+}
+/* --article-- */
+article{
+    background:url(/asset/article/bgr-slider.jpg)
+}
+nav{
+    margin:0px 100px;
+    border:1px solid #231c1c;
+    background-color: #0A1F77;
+}
+nav ul {
+    display:flex;
+    list-style: none;
+    position: relative;
+}
+nav ul.menu>li{
+    padding:4px 0px 8px 0px;
+
+}
+nav ul.menu>li a{
+    text-decoration: none;
+    padding:10px 6px 10px 0px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color:white;
+    font-size:10px;
+}
+nav ul.menu>li i{
+    font-size: 15px;
+    height: 0px;
+}
+nav ul.menu>li>a::before{
+    content:"|";
+    padding-right: 5px;
+}
+nav ul.menu>li a i::before{
+    content: "" ;
+}
+nav ul.menu>li a:hover{
+    background-color:#007bff;
+}
+nav ul.menu>li:hover .sub-menu{
+    display:block;
+}
+nav ul.sub-menu{
+    z-index: 1;
+    position: absolute;
+    display:block;
+    background-color: #007bff;
+    top:31px;
+    display:none;
+}
+nav ul.sub-menu li{
+    width:100%;
+}
+nav ul.sub-menu li a{
+    border-bottom:1px solid ;
+    padding-left:10px;
+    display:block;
+    width:100%;
+    background-color: #007bff;
+}
+nav ul.sub-menu li a:hover{
+    font-style: italic;
+    color:blue;
+}
+article div.slide-pic{
+    margin:0px 100px 0px 100px;
+}
+article div.slide-pic img{
+    width:100%;
+    border:1px solid white;
+}
